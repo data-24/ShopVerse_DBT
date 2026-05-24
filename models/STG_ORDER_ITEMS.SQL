@@ -1,0 +1,8 @@
+SELECT 
+	ID AS ORDER_ITEM_ID,
+	ORDER_ID ,
+	PRODUCT_ID,
+	QUANTITY ,
+	UNIT_PRICE 
+    FROM {{ source('raw_src', 'RAW_ORDER_ITEMS') }}
+);

@@ -1,0 +1,9 @@
+SELECT 
+	ID AS ORDER_ID ,
+	CUSTOMER_ID ,
+	STATUS ,
+	ORDER_DATE ,
+	TOTAL_AMOUNT ,
+	CREATED_AT ,
+	UPDATED_AT 
+ FROM {{ source('raw_src', 'RAW_ORDERS') }}

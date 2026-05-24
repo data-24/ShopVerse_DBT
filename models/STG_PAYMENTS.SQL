@@ -1,0 +1,7 @@
+SELECT 
+	ID AS PAYMENT_ID ,
+	ORDER_ID ,
+	AMOUNT ,
+	PAYMENT_METHOD ,
+	PAYMENT_DATE 
+ FROM {{ source('raw_src', 'RAW_PAYMENTS') }}

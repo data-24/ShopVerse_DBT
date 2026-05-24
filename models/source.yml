@@ -1,0 +1,12 @@
+version: 2
+sources:
+  - name: raw_src # this is the source_name
+    database: SHOPVERSE_DBT
+    schema: RAW_SCHEMA
+
+    tables:
+      - name: RAW_CUSTOMERS # this is the table_name
+      - name: RAW_ORDERS
+      - name: RAW_PAYMENTS  
+      - name: RAW_PRODUCTS
+      - name: RAW_ORDER_ITEMS

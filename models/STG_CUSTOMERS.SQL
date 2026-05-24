@@ -1,0 +1,8 @@
+SELECT 
+	ID AS CUSTOMER_ID,
+	NAME ,
+	EMAIL,
+	REGION ,
+	CREATED_AT,
+	UPDATED_AT 
+ FROM {{ source('raw_src', 'RAW_CUSTOMERS') }}
